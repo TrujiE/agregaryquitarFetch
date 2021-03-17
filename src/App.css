@@ -1,12 +1,9 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1{
+  text-align: center;
 }
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -23,10 +20,104 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 1;
+}
+
+ul li {
+  border: 1px solid #ddd;
+  width: 300px;
+  margin-top: -1px;
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block;
+  position: relative;
+}
+
+ul li:hover {
+  background-color: #eee;
+}
+
+.list p span{
+  cursor: pointer;
+  position: absolute;
+  top: 30%;
+  right: 0%;
+  padding: 8px 13px;
+  transform: translate(0%, -35%);
+}
+
+.list p{
+  position: relative;
+}
+
+.list p span:hover {background: #bbb;}
+
+#formulario {
+  background-color:  #ffffef;
+  width: 500px;
+  border: 1;
+  height: 550px;
+  border-radius: 5px;
+  padding: 0 20px;
+  margin: 20px;
+}
+
+#formulario input{ 
+  background-color:  white;
+  width: 220px;
+  border: 1;
+  border-radius: 5px;
+  padding: 0 20px;
+  margin: 20px;
+  font-size: 20px;
+  color: black;
+
+}
+#formulario button{
+  background-color:  #f6f6f6;
+  border: 1;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
 .App-link {
   color: #61dafb;
 }
+
+.list {
+  border: 1px solid #ddd;
+  width: 350px;
+  height: 45px;
+  margin-top: -1px;
+  background-color: #f6f6f6;
+  padding: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  color: orange;
+  display: block;
+  border-radius: 5px;
+  position: relative;
+}
+
+.list:hover {
+  background-color: #eee;
+}
+
+.close{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  padding: 12px 16px;
+  transform: translate(0%, -50%);
+}
+
 
 @keyframes App-logo-spin {
   from {
